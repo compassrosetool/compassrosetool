@@ -1,0 +1,836 @@
+---
+import '../styles/global.css';
+---
+
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Compass Rose  Digital Spirit Level | Free Online Compass Tool</title>
+  <meta name="title" content="Compass Rose & Digital Spirit Level | Free Online Compass Tool">
+  <meta name="description" content="Use our free online compass tool and digital spirit level. Get accurate live compass direction, degrees, and a precision bull's eye spirit level for mobile.">
+  <meta name="keywords" content="compass rose tool, compass, compass mobile, online compass geometry, online compass tool geometry, free online compass tool, online compass live, online compass to find north, live compass on phone, compass direction, compass with degrees online, compass rose on a map, the spirit level, digital spirit level, spirit level tool, spirit level compass, online spirit level free, bull's eye spirit level, tools spirit level, precision spirit level, spirit level online, magnetic spirit level">
+  <meta name="author" content="Compass Rose Tool">
+  <link rel="canonical" href="https://compassrosetool.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://compassrosetool.com/">
+  <meta property="og:title" content="Compass Rose & Digital Spirit Level | Free Online Compass Tool">
+  <meta property="og:description" content="Use our free online compass tool and digital spirit level. Get accurate live compass direction, degrees, and a precision bull's eye spirit level for mobile.">
+  <meta property="og:image" content="https://compassrosetool.com/og-image.jpg">
+
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Compass Rose Tool" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- AI & Search Engine Optimization: Web App Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Compass Rose & Digital Spirit Level",
+      "url": "https://compassrosetool.com",
+      "description": "High-speed, precision alignment tool. Find True North and measure surface tilt instantly directly in your browser.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD"
+      }
+    }
+  </script>
+
+  <!-- AI & Search Engine Optimization: FAQ Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a compass rose?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A compass rose is a figure displayed on a compass, map, nautical chart, or monument used to display the orientation of the cardinal directions (North, East, South, and West) and their intermediate points."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does a compass rose look like?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It typically looks like a multi-pointed star. A standard compass rose features 16 points (or 32 for maritime navigation), with the four primary cardinal directions (N, E, S, W) being the longest and most prominent."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does an online compass work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An online compass works by accessing the magnetometer and accelerometer sensors built into your mobile device. It reads the Earth's magnetic field and translates that data into a visual orientation on your web browser."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does a magnetic compass work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A traditional magnetic compass contains a lightweight magnetic needle that freely rotates on a pivot. The magnetized needle aligns itself with the Earth's magnetic field, naturally pointing towards magnetic North."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are some tips for the accuracy of an online compass?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To ensure accuracy, keep your device away from metallic phone cases, magnets, and heavy electrical equipment. If the compass seems stuck, calibrate your device by moving it in a 'Figure 8' motion in the air to reset the magnetometer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I find direction using a mobile compass?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Open the online compass tool, hold your phone flat (parallel to the ground), and point the top of your phone in the direction you want to measure. The screen will display your exact degree bearing and cardinal direction."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I find which direction I'm facing? / How can I see my current direction?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simply hold your smartphone flat in front of you while using our tool. The top edge of your phone represents your line of sight. The large degree number and cardinal letter on the screen indicate the exact direction you are facing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a phone be used as a compass?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, almost all modern smartphones have a built-in magnetometer, allowing them to function as a highly accurate digital compass when paired with a web or native compass application."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I activate a compass?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "On Android, the browser usually accesses the sensor automatically upon loading the page. On iOS devices, you must click the 'Start Compass' button on the screen to manually grant the browser permission to read your motion and orientation sensors."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which mobile phones have a compass sensor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The vast majority of modern smartphones, including all Apple iPhones, Samsung Galaxy devices, Google Pixels, and most mid-to-high-tier Android phones, feature built-in compass sensors (magnetometers)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a spirit level?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A spirit level, also known as a bubble level, is an instrument designed to indicate whether a surface is perfectly horizontal (level) or vertical (plumb)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you use a spirit level?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Place the spirit level flat against the surface you want to measure. For our digital bull's eye level, lay your phone flat on the table or surface and observe the bubble's position relative to the center ring."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you read a spirit level?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Read the level by looking at the bubble. If the bubble is perfectly centered within the target rings, the surface is flat (0° tilt). If the bubble drifts to one side, that specific side of the surface is elevated."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a spirit level used for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is used in construction, carpentry, photography, and DIY home projects to ensure objects like picture frames, shelves, tables, and camera tripods are perfectly aligned, straight, and balanced."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does a spirit level work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A physical spirit level uses a liquid-filled vial containing a small air bubble that naturally seeks the highest point. A digital spirit level uses your phone's built-in accelerometer to measure gravitational pull along the X and Y axes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does an online spirit level work on mobile?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The online spirit level reads data from your smartphone's internal accelerometer via the web browser, translating the device's physical pitch and roll into a visual digital bubble display on your screen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How to calibrate a spirit level?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To ensure your digital spirit level is accurate, you can calibrate your phone's motion sensors via your device's system settings. Additionally, always make sure your phone does not have a thick, uneven case that might cause it to lay at an angle."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a bull's eye spirit level?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A bull's eye spirit level is a circular, two-dimensional level that measures surface tilt in all directions simultaneously (both pitch and roll), unlike a traditional tubular level that only measures one axis at a time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are digital spirit levels accurate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, digital spirit levels use your mobile device's highly sensitive internal accelerometers and gyroscopes. When properly calibrated and used without a thick phone case, they can measure surface tilt accurately down to fractions of a degree."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know if my spirit level is working correctly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can test any spirit level by placing it on a flat surface and noting the bubble's position. Then, rotate the level 180 degrees exactly in the same spot. If the bubble rests in the exact same position both times, the tool is accurate."
+          }
+        }
+      ]
+    }
+  </script>
+
+  <!-- Prevent theme flash on load -->
+  <script is:inline>
+    const theme = (() => {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+        return localStorage.getItem('theme');
+      }
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'dark';
+      }
+      return 'light';
+    })();
+    if (theme === 'light') {
+      document.documentElement.classList.remove('dark');
+    } else {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
+</head>
+
+<body class="bg-zinc-50 dark:bg-[#09090b] text-zinc-900 dark:text-zinc-300 font-sans selection:bg-rose-500/30 flex flex-col items-center transition-colors duration-200 overflow-x-hidden">
+
+<div class="hidden text-green-500 bg-green-500"></div>
+  
+  <!-- Navigation Header (Theme responsive) -->
+  <header class="w-full border-b border-zinc-200 dark:border-zinc-800/80 bg-white/80 dark:bg-[#09090b]/80 backdrop-blur-xl sticky top-0 z-50 transition-colors duration-200">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 cursor-pointer" aria-label="Scroll to top">
+        <img src="/favicon-96x96.png" alt="Compass Rose Logo" class="w-9 h-9 object-contain drop-shadow-sm" aria-hidden="true" />
+        <div class="text-xl font-extrabold tracking-tight text-zinc-900 dark:text-white m-0">Compass Rose</div>
+      </a>
+      <div class="flex items-center gap-6">
+        <nav class="text-sm font-semibold text-zinc-500 dark:text-zinc-400 hidden sm:flex gap-4">
+          <a href="#about" class="hover:text-zinc-900 dark:hover:text-white transition-colors">About Tool</a>
+          <a href="#faq" class="hover:text-zinc-900 dark:hover:text-white transition-colors">FAQ</a>
+        </nav>
+        
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="p-2.5 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors border border-zinc-200 dark:border-zinc-700/50 focus:outline-none" aria-label="Toggle Dark Mode">
+          <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+          </svg>
+          <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-3xl w-full mx-auto px-4 py-8 flex flex-col items-center">
+    
+    <div class="mb-8 text-center">
+      <h1 class="text-3xl sm:text-4xl font-black text-zinc-900 dark:text-white tracking-tight mb-3">Compass Rose & Digital Spirit Level</h1>
+      <p class="text-[15px] text-zinc-600 dark:text-zinc-400 max-w-xl mx-auto">High-speed, precision alignment tool. Find True North and measure surface tilt instantly.</p>
+    </div>
+
+    <!-- Mode Tabs (Locked to Dark Theme) -->
+    <div class="flex items-center bg-[#09090b] p-1.5 rounded-full border border-zinc-800 mb-8 text-sm font-semibold shadow-sm" role="tablist">
+      <button id="tab-compass" role="tab" aria-selected="true" class="px-6 py-2 rounded-full bg-zinc-800 text-white shadow-md transition-colors">
+        Compass Rose
+      </button>
+      <button id="tab-level" role="tab" aria-selected="false" class="px-6 py-2 rounded-full text-zinc-400 hover:text-white transition-colors">
+        Spirit Level
+      </button>
+    </div>
+
+    <!-- LOCKED DARK THEME Tool Container -->
+    <div class="w-full flex flex-col items-center p-8 sm:p-10 bg-[#121214] border border-zinc-800/80 rounded-[2.5rem] shadow-2xl">
+      
+      <!-- Compass View -->
+      <div id="view-compass" class="flex flex-col items-center w-full" role="tabpanel">
+        
+        <div class="relative w-76 h-76 sm:w-96 sm:h-96 flex items-center justify-center select-none">
+          
+          <!-- Fixed Green/Red Target Indicator -->
+          <div id="alignment-line" class="absolute -top-3 w-1.5 h-7 bg-rose-500 rounded-full z-30 shadow-[0_0_10px_rgba(244,63,94,0.5)] transition-all duration-200"></div>
+          
+          <!-- Rotating Compass Rose Dial (Locked to Dark) -->
+          <div class="relative w-76 h-76 sm:w-96 sm:h-96 flex items-center justify-center select-none overflow-hidden rounded-full touch-pan-y">
+            
+            <svg id="compass-dial" class="w-full h-full p-2.5 pointer-events-none" viewBox="0 0 400 400" aria-label="Interactive 16-point compass face">
+              <!-- Outer Degree Rings -->
+              <circle cx="200" cy="200" r="190" fill="none" stroke="#27272a" stroke-width="1.5" />
+              <circle cx="200" cy="200" r="162" fill="none" stroke="#27272a" stroke-width="1" />
+              <circle cx="200" cy="200" r="130" fill="none" stroke="#3f3f46" stroke-width="1" stroke-dasharray="2,3" />
+              
+              <g font-size="9" font-family="monospace" text-anchor="middle" font-weight="700" fill="#71717a">
+                <text x="200" y="32">0°</text><text x="285" y="55">30°</text><text x="348" y="118">60°</text>
+                <text x="370" y="203">90°</text><text x="348" y="288">120°</text><text x="285" y="352">150°</text>
+                <text x="200" y="375">180°</text><text x="115" y="352">210°</text><text x="52" y="288">240°</text>
+                <text x="30" y="203">270°</text><text x="52" y="118">300°</text><text x="115" y="55">330°</text>
+              </g>
+              
+              <g id="dial-ticks"></g>
+              
+              <!-- Star Points (Locked Hex Colors for Dark Contrast) -->
+              <g>
+                <g transform="rotate(45 200 200)">
+                  <polygon points="200,200 200,65 186,186" fill="#52525b" />
+                  <polygon points="200,200 200,65 214,186" fill="#3f3f46" />
+                  <polygon points="200,200 335,200 214,186" fill="#52525b" />
+                  <polygon points="200,200 335,200 214,214" fill="#3f3f46" />
+                  <polygon points="200,200 200,335 214,214" fill="#3f3f46" />
+                  <polygon points="200,200 200,335 186,214" fill="#52525b" />
+                  <polygon points="200,200 65,200 186,214" fill="#3f3f46" />
+                  <polygon points="200,200 65,200 186,186" fill="#52525b" />
+                </g>
+                <!-- North -->
+                <polygon points="200,200 200,42 178,178" fill="#f43f5e" />
+                <polygon points="200,200 200,42 222,178" fill="#be123c" />
+                <!-- East/South/West -->
+                <polygon points="200,200 358,200 222,178" fill="#e4e4e7" />
+                <polygon points="200,200 358,200 222,222" fill="#71717a" />
+                <polygon points="200,200 200,358 222,222" fill="#71717a" />
+                <polygon points="200,200 200,358 178,222" fill="#e4e4e7" />
+                <polygon points="200,200 42,200 178,222" fill="#71717a" />
+                <polygon points="200,200 42,200 178,178" fill="#e4e4e7" />
+              </g>
+              
+              <!-- Letters (Locked to light colors for visibility) -->
+              <text x="200" y="24" text-anchor="middle" class="fill-rose-500 font-extrabold text-lg">N</text>
+              <text x="382" y="206" text-anchor="middle" class="fill-zinc-100 font-bold text-base">E</text>
+              <text x="200" y="394" text-anchor="middle" class="fill-zinc-100 font-bold text-base">S</text>
+              <text x="18" y="206" text-anchor="middle" class="fill-zinc-100 font-bold text-base">W</text>
+              
+              <text x="325" y="78" text-anchor="middle" class="fill-zinc-400 font-semibold text-xs">NE</text>
+              <text x="325" y="332" text-anchor="middle" class="fill-zinc-400 font-semibold text-xs">SE</text>
+              <text x="75" y="332" text-anchor="middle" class="fill-zinc-400 font-semibold text-xs">SW</text>
+              <text x="75" y="78" text-anchor="middle" class="fill-zinc-400 font-semibold text-xs">NW</text>
+              
+              <!-- Center Bezel -->
+              <circle cx="200" cy="200" r="18" fill="#18181b" stroke="#3f3f46" stroke-width="2" />
+              <circle cx="200" cy="200" r="8" fill="#f43f5e" />
+            </svg>
+          </div>
+		  
+		  <!-- Sensor Warning Banner -->
+        <div id="sensor-warning" class="hidden mt-6 w-full max-w-md p-4 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-amber-300 text-center text-sm">
+          <p class="font-bold">Compass sensor inactive or unsupported</p>
+          <p class="text-xs text-amber-400/80 mt-1">If using mobile Chrome, enable motion sensors in Chrome flags below to start tracking.</p>
+          <a href="#troubleshooting" class="inline-block mt-2 text-xs font-bold underline text-amber-200 hover:text-white">View Setup Guide ↓</a>
+        </div>
+
+        </div>
+
+        <div class="mt-8 text-center" aria-live="polite">
+          <div class="text-6xl font-black tracking-tighter text-white font-mono">
+            <span id="heading-degrees">0</span>°
+          </div>
+          <div id="heading-cardinal" class="text-xl font-bold text-rose-500 mt-1 uppercase tracking-widest">
+            North
+          </div>
+        </div>
+        
+        <!-- Live Sensor Button -->
+        <button id="btn-permission" aria-label="Enable compass sensors" class="mt-8 px-6 py-3 bg-white text-zinc-900 rounded-xl text-sm font-bold shadow-md transition-colors hidden">
+          Start Compass
+        </button>
+      </div>
+
+      <!-- Spirit Level View (Locked to Dark) -->
+      <div id="view-level" class="hidden flex-col items-center w-full py-4" role="tabpanel">
+        <div class="relative w-64 h-64 rounded-full border border-zinc-700 bg-zinc-950 flex items-center justify-center overflow-hidden shadow-inner">
+          <div class="absolute w-44 h-44 rounded-full border border-zinc-800"></div>
+          <div class="absolute w-24 h-24 rounded-full border border-zinc-700"></div>
+          <div class="absolute w-8 h-8 rounded-full border-2 border-rose-500"></div>
+          <div id="level-bubble" class="absolute w-10 h-10 rounded-full bg-blue-500/80 shadow-[0_0_12px_rgba(59,130,246,0.6)] backdrop-blur"></div>
+        </div>
+        <div class="mt-8 text-center font-mono font-bold text-white">
+          <div class="text-4xl tracking-tighter"><span id="level-deg">0.0</span>°</div>
+          <div class="text-xs text-zinc-500 font-sans mt-2 uppercase tracking-widest font-semibold">Surface Tilt</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Sensor Troubleshooting Section (GEO Optimized List) -->
+  <section id="troubleshooting" class="w-full max-w-3xl mx-auto px-4 py-12 border-t border-zinc-200 dark:border-zinc-800 transition-colors">
+    <div class="text-center mb-8">
+      <h2 class="text-2xl font-black text-zinc-900 dark:text-white">Compass Not Working? How to Enable Sensors</h2>
+      <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-2">Mobile Chrome requires generic sensor access to read device orientation. Follow these steps to activate it:</p>
+    </div>
+
+    <!-- URL Copy Box -->
+    <div class="bg-zinc-100 dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-800 rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 mb-10">
+      <code class="text-xs sm:text-sm font-mono text-zinc-800 dark:text-zinc-300 break-all select-all">chrome://flags/#enable-generic-sensor-extra-classes</code>
+      <button id="btn-copy-flag" class="w-full sm:w-auto px-5 py-2 text-xs font-bold rounded-xl bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 shrink-0 cursor-pointer hover:opacity-90 transition-opacity">
+        Copy Link
+      </button>
+    </div>
+
+    <!-- 3-Step Screenshot Grid (Converted to Semantic Ordered List for AI) -->
+    <ol class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center list-none p-0 m-0">
+      <li class="flex flex-col items-center">
+        <span class="text-xs font-extrabold uppercase tracking-wider text-rose-500 mb-2" aria-hidden="true">Step 1</span>
+        <p class="text-xs text-zinc-600 dark:text-zinc-400 mb-3"><strong>Paste the link</strong> into the Chrome address bar to locate the flag.</p>
+        <div class="w-full aspect-[9/16] bg-zinc-200 dark:bg-zinc-900 rounded-2xl border border-zinc-300 dark:border-zinc-800 overflow-hidden flex items-center justify-center">
+          <img src="/step-1.jpg" alt="Step 1: Locate generic sensor flag" class="w-full h-full object-cover" loading="lazy" decoding="async" onerror="this.style.display='none'" />
+        </div>
+      </li>
+
+      <li class="flex flex-col items-center">
+        <span class="text-xs font-extrabold uppercase tracking-wider text-rose-500 mb-2" aria-hidden="true">Step 2</span>
+        <p class="text-xs text-zinc-600 dark:text-zinc-400 mb-3">Change the dropdown setting from Default to <strong>Enabled</strong>.</p>
+        <div class="w-full aspect-[9/16] bg-zinc-200 dark:bg-zinc-900 rounded-2xl border border-zinc-300 dark:border-zinc-800 overflow-hidden flex items-center justify-center">
+          <img src="/step-2.jpg" alt="Step 2: Set flag to Enabled" class="w-full h-full object-cover" loading="lazy" decoding="async" onerror="this.style.display='none'" />
+        </div>
+      </li>
+
+      <li class="flex flex-col items-center">
+        <span class="text-xs font-extrabold uppercase tracking-wider text-rose-500 mb-2" aria-hidden="true">Step 3</span>
+        <p class="text-xs text-zinc-600 dark:text-zinc-400 mb-3">Tap the <strong>Relaunch button</strong> at the bottom of Chrome.</p>
+        <div class="w-full aspect-[9/16] bg-zinc-200 dark:bg-zinc-900 rounded-2xl border border-zinc-300 dark:border-zinc-800 overflow-hidden flex items-center justify-center">
+          <img src="/step-3.jpg" alt="Step 3: Relaunch Chrome" class="w-full h-full object-cover" loading="lazy" decoding="async" onerror="this.style.display='none'" />
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section id="about" class="w-full bg-white dark:bg-zinc-950 border-t border-zinc-200 dark:border-zinc-900 mt-12 py-16 px-4 transition-colors duration-200">
+    <div class="max-w-3xl mx-auto space-y-8 text-zinc-600 dark:text-zinc-400 leading-relaxed text-[15px]">
+      <h2 class="text-2xl font-black text-zinc-900 dark:text-zinc-100">What is a Compass Rose?</h2>
+      <p>A <strong>compass rose</strong> is the timeless, multi-pointed geometric figure found on nautical charts, modern GPS systems, and classic maps. Originally designed by meteorologists and mariners to indicate the direction of the winds, today it serves as the foundational element of navigation. When you observe a <strong>compass rose on a map</strong>, it immediately provides a visual orientation of the four cardinal directions: North (N), East (E), South (S), and West (W).</p>
+      <p>To truly understand <strong>online compass geometry</strong>, one must look at the structural layout of the star. Our <strong>compass rose tool</strong> features a traditional 16-point design. This includes the four cardinal points, four intercardinal points (NE, SE, SW, NW), and eight secondary intercardinal points (such as NNE and WSW). The exact mathematical precision required to generate this <strong>online compass tool geometry</strong> allows for highly accurate bearing readouts, breaking down a 360-degree circle into precise, recognizable navigational slices.</p>
+
+      <h2 class="text-2xl font-black text-zinc-900 dark:text-zinc-100 mt-10">How to Use the Free Online Compass Tool</h2>
+      <p>Finding your way without downloading bulky applications is easier than ever. Our web-based platform operates as a <strong>free online compass tool</strong> that taps directly into the hardware sensors of your smartphone or tablet. By utilizing the magnetometer built into modern devices, you get an <strong>online compass live</strong> in your browser.</p>
+      <ul class="list-disc pl-6 space-y-2 mt-4 text-zinc-700 dark:text-zinc-300">
+        <li><strong>Live Compass on Phone:</strong> Simply open this page on your mobile browser. If prompted, click the start button to allow the tool to read your device's orientation data.</li>
+        <li><strong>Online Compass to Find North:</strong> Once activated, hold your phone flat in your palm, parallel to the ground. The prominent red pointer on our custom digital dial will immediately align with magnetic North.</li>
+        <li><strong>Compass Direction & Degrees:</strong> As you rotate, the <strong>compass direction</strong> will update in real-time. Below the dial, you will see a large, highly legible <strong>compass with degrees online</strong> readout, updating exactly where you are pointing from 0° to 359°.</li>
+      </ul>
+
+      <h2 class="text-2xl font-black text-zinc-900 dark:text-zinc-100 mt-10">Understanding the Digital Spirit Level</h2>
+      <p>Navigation is only half the battle when evaluating your physical environment; the other half is balance and alignment. That is why we integrated <strong>the spirit level</strong> directly into our utility suite. By switching tabs at the top of the interface, you seamlessly transition from navigation to physical calibration.</p>
+      <p>A traditional bubble level utilizes a liquid-filled vial with an air bubble to determine whether a surface is perfectly horizontal (level) or vertical (plumb). Our <strong>digital spirit level</strong> recreates this experience electronically. Often referred to as a <strong>bull's eye spirit level</strong>, our circular design provides two-dimensional feedback simultaneously—measuring both pitch (front-to-back tilt) and roll (side-to-side tilt).</p>
+
+      <h2 class="text-2xl font-black text-zinc-900 dark:text-zinc-100 mt-10">Why Choose a Web-Based Spirit Level Tool?</h2>
+      <p>When you are in the middle of a DIY home improvement project, mounting a television, or setting up a tripod for photography, digging through a toolbox for a physical tool is a hassle. Having a <strong>spirit level online</strong> means your measurement tool is always in your pocket. </p>
+      <ul class="list-disc pl-6 space-y-2 mt-4 text-zinc-700 dark:text-zinc-300">
+        <li><strong>Precision Spirit Level:</strong> By tapping into your device's internal gyroscope and accelerometer, the tool can detect fractional degree shifts, displaying an accurate tilt readout down to the decimal.</li>
+        <li><strong>Tools Spirit Level Combo:</strong> By combining the magnetic bearing data with accelerometer data, you possess a comprehensive survey tool. It operates akin to a high-end <strong>magnetic spirit level</strong>.</li>
+        <li><strong>Online Spirit Level Free:</strong> Like our directional tool, this is completely free to use. There are no paywalls, hidden subscriptions, or invasive app store installations required.</li>
+      </ul>
+
+      <h2 class="text-2xl font-black text-zinc-900 dark:text-zinc-100 mt-10">Optimizing Your Compass Mobile Experience</h2>
+      <p>To get the absolute best results out of a <strong>compass mobile</strong> web application, environmental factors must be considered. Because your phone relies on a digital magnetometer, it is susceptible to localized magnetic interference. If you find the <strong>online compass tool geometry</strong> appears stuck or the degrees seem inaccurate, you may need to calibrate your device.</p>
+      <p>Calibration is simple: step away from large metallic objects like computers, vehicles, or reinforced concrete walls. Hold your phone securely and move it through the air in a "Figure 8" motion several times. This forces the internal sensors to sweep through all three dimensions, resetting the baseline and restoring the accuracy of the <strong>online compass live</strong> readout.</p>
+    </div>
+  </section>
+
+  <!-- FAQ Section (GEO Optimized Hierarchy & Bolding) -->
+  <section id="faq" class="w-full bg-zinc-50 dark:bg-[#09090b] border-t border-zinc-200 dark:border-zinc-900 py-16 px-4 transition-colors duration-200">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-black text-zinc-900 dark:text-white tracking-tight">Frequently Asked Questions</h2>
+        <p class="text-zinc-500 dark:text-zinc-400 mt-2">Everything you need to know about compasses and spirit levels.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Compass FAQs -->
+        <div class="space-y-6">
+          <h2 class="text-xl font-bold text-rose-500 border-b border-zinc-200 dark:border-zinc-800 pb-2 mb-4">Compass Tools</h2>
+          
+          <div>
+            <h3 class="font-bold text-zinc-900 dark:text-zinc-100 text-[15px]">What is a compass rose?</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-1">A <strong>compass rose</strong> is a figure displayed on a compass, map, nautical chart, or monument used to display the orientation of the <strong>cardinal directions</strong> (North, East, South, and West) and their intermediate points.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-zinc-900 dark:text-zinc-100 text-[15px]">What does a compass rose look like?</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-1">It typically looks like a <strong>multi-pointed star</strong>. A standard compass rose features 16 points, with the four primary cardinal directions being the longest and most prominent.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-zinc-900 dark:text-zinc-100 text-[15px]">How does an online compass work?</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-1">An online compass works by accessing the <strong>magnetometer and accelerometer sensors</strong> built into your mobile device. It reads the Earth's magnetic field and translates that data into a visual orientation on your web browser.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-zinc-900 dark:text-zinc-100 text-[15px]">How does a magnetic compass work?</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-1">A traditional magnetic compass contains a <strong>lightweight magnetic needle</strong> that freely rotates on a pivot. The magnetized needle aligns itself with the Earth's magnetic field, naturally pointing towards magnetic North.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-zinc-900 dark:text-zinc-100 text-[15px]">What are some tips for the accuracy of an online compass?</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-1">Keep your device away from <strong>metallic phone cases, magnets, and heavy electrical equipment</strong>. If the compass seems stuck, calibrate your device by moving it in a "Figure 8" motion in the air.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-zinc-900 dark:text-zinc-100 text-[15px]">How do I find direction using a mobile compass?</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-1">Open the tool, hold your phone <strong>flat (parallel to the ground)</strong>, and point the top of your phone in the direction you want to measure. The screen will display your exact degree bearing.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-zinc-900 dark:text-zinc-100 text-[15px]">How can I see my current direction?</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-1">Hold your smartphone <strong>flat in front of you</strong>. The top edge of your phone represents your <strong>line of sight</strong>. The large degree number indicates the exact direction you are facing.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-zinc-900 dark:text-zinc-100 text-[15px]">Can a phone be used as a compass?</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-1">Yes, almost all modern smartphones have a <strong>built-in magnetometer</strong>, allowing them to function as a highly accurate digital compass when paired with a web application.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-zinc-900 dark:text-zinc-100 text-[15px]">How do I activate a compass?</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-1">On Android, the browser accesses the sensor <strong>automatically</strong>. On iOS devices, you must click the <strong>"Start Compass" button</strong> to manually grant the browser permission to read your motion sensors.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-zinc-900 dark:text-zinc-100 text-[15px]">Which mobile phones have a compass sensor?</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-1">The <strong>vast majority of modern smartphones</strong>, including Apple iPhones, Samsung Galaxy devices, and Google Pixels, feature built-in compass sensors.</p>
+          </div>
+        </div>
+
+        <!-- Spirit Level FAQs -->
+        <div class="space-y-6">
+          <h2 class="text-xl font-bold text-blue-500 border-b border-zinc-200 dark:border-zinc-800 pb-2 mb-4">Spirit Level Tools</h2>
+          
+          <div>
+            <h3 class="font-bold text-zinc-900 dark:text-zinc-100 text-[15px]">What is a spirit level?</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-1">A <strong>spirit level</strong>, also known as a bubble level, is an instrument designed to indicate whether a surface is <strong>perfectly horizontal (level) or vertical (plumb)</strong>.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-zinc-900 dark:text-zinc-100 text-[15px]">How do you use a spirit level?</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-1">Place the level <strong>flat against the surface</strong>. For our digital bull's eye level, lay your phone flat on the table and observe the bubble's position relative to the center ring.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-zinc-900 dark:text-zinc-100 text-[15px]">How do you read a spirit level?</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-1">If the bubble is <strong>perfectly centered</strong> within the target rings, the surface is <strong>flat</strong>. If the bubble drifts to one side, that specific side of the surface is elevated.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-zinc-900 dark:text-zinc-100 text-[15px]">What is a spirit level used for?</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-1">It is used in <strong>construction, carpentry, photography, and DIY home projects</strong> to ensure objects like picture frames, shelves, and tables are perfectly aligned and balanced.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-zinc-900 dark:text-zinc-100 text-[15px]">How does a spirit level work?</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-1">A physical spirit level uses a <strong>liquid-filled vial</strong> containing a small air bubble that seeks the highest point. A digital spirit level uses your phone's <strong>built-in accelerometer</strong> to measure gravitational pull.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-zinc-900 dark:text-zinc-100 text-[15px]">How does an online spirit level work on mobile?</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-1">The online spirit level reads data from your smartphone's <strong>internal accelerometer</strong> via the web browser, translating physical pitch and roll into a visual digital bubble display.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-zinc-900 dark:text-zinc-100 text-[15px]">How to calibrate a spirit level?</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-1">To ensure accuracy, calibrate your phone's motion sensors via your device's <strong>system settings</strong>. Also, ensure your phone does not have a thick, uneven case that causes it to lay at an angle.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-zinc-900 dark:text-zinc-100 text-[15px]">What is a bull's eye spirit level?</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-1">A bull's eye spirit level is a <strong>circular, two-dimensional level</strong> that measures surface tilt in <strong>all directions simultaneously</strong> (both pitch and roll), unlike a traditional tubular level that only measures one axis at a time.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-zinc-900 dark:text-zinc-100 text-[15px]">Are digital spirit levels accurate?</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-1">Yes, digital spirit levels use your mobile device's highly sensitive <strong>internal accelerometers and gyroscopes</strong>. When properly calibrated and used without a thick phone case, they can measure surface tilt accurately down to fractions of a degree.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-zinc-900 dark:text-zinc-100 text-[15px]">How do I know if my spirit level is working correctly?</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-1">You can test any spirit level by placing it on a flat surface and noting the bubble's position. Then, <strong>rotate the level 180 degrees</strong> exactly in the same spot. If the bubble rests in the exact same position both times, the tool is accurate.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="w-full bg-zinc-50 dark:bg-[#09090b] py-10 border-t border-zinc-200 dark:border-zinc-800 transition-colors duration-200 mt-auto">
+    <div class="max-w-4xl mx-auto px-4 flex flex-col items-center gap-6">
+      <nav class="flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm font-semibold text-zinc-500 dark:text-zinc-400">
+        <a href="/about" class="hover:text-zinc-900 dark:hover:text-white transition-colors">About Us</a>
+        <a href="/privacy" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Privacy Policy</a>
+        <a href="/terms" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Terms & Conditions</a>
+        <a href="/contact" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Contact Us</a>
+      </nav>
+      <p class="text-sm font-semibold text-zinc-400 dark:text-zinc-600">&copy; 2026 Compass Rose Tool. Free to use, no account needed.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Theme Toggle Logic
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const darkIcon = document.getElementById('theme-toggle-dark-icon');
+    const lightIcon = document.getElementById('theme-toggle-light-icon');
+
+    if (document.documentElement.classList.contains('dark')) {
+      lightIcon?.classList.remove('hidden');
+    } else {
+      darkIcon?.classList.remove('hidden');
+    }
+
+    themeToggleBtn?.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      if (document.documentElement.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+        lightIcon?.classList.remove('hidden');
+        darkIcon?.classList.add('hidden');
+      } else {
+        localStorage.setItem('theme', 'light');
+        darkIcon?.classList.remove('hidden');
+        lightIcon?.classList.add('hidden');
+      }
+    });
+
+    // Compass Tools Logic
+    const points = ["NORTH", "NNE", "NE", "ENE", "EAST", "ESE", "SE", "SSE", "SOUTH", "SSW", "SW", "WSW", "WEST", "WNW", "NW", "NNW"];
+    
+    function getCardinal(deg) {
+      const normalized = (deg % 360 + 360) % 360;
+      const index = Math.round(normalized / 22.5) % 16;
+      return points[index];
+    }
+
+    const dial = document.getElementById('compass-dial');
+    const headingDeg = document.getElementById('heading-degrees');
+    const headingCard = document.getElementById('heading-cardinal');
+    const alignmentLine = document.getElementById('alignment-line');
+    const permtn = document.getElementById('btn-start');
+    const levelBubble = document.getElementById('level-bubble');
+    const levelDeg = document.getElementById('level-deg');
+
+    // Generate responsive ticks locked to dark hex colors
+    const dialTicks = document.getElementById('dial-ticks');
+    if (dialTicks) {
+      let ticksHTML = '';
+      for (let i = 0; i < 360; i += 5) {
+        let isPrimary = i % 30 === 0;
+        let isCardinal = i % 90 === 0;
+        
+        let length = isPrimary ? (isCardinal ? 16 : 12) : 6;
+        let width = isPrimary ? 2.5 : 1.5;
+        let yPos = isPrimary ? 18 : 22;
+        let color = isCardinal && i === 0 ? '#f43f5e' : (isPrimary ? '#d4d4d8' : '#52525b');
+        
+        ticksHTML += `<rect x="198.75" y="${yPos}" width="${width}" height="${length}" fill="${color}" transform="rotate(${i} 200 200)" />`;
+      }
+      dialTicks.innerHTML = ticksHTML;
+    }
+
+    // Add a tracker for continuous rotation to fix the 360-to-0 snap glitch
+    // Target rotation from sensor, and actual smoothed rotation for the UI
+    let targetRotation = 0;
+    let smoothedRotation = 0;
+
+    function updateCompassUI(deg) {
+      let normalizedDeg = (deg % 360 + 360) % 360;
+      let rounded = Math.round(normalizedDeg);
+      if (rounded === 360) rounded = 0; 
+      
+      let delta = deg - ((-targetRotation) % 360);
+      if (delta > 180) delta -= 360;
+      else if (delta < -180) delta += 360;
+      
+      targetRotation -= delta;
+
+      if (headingDeg && headingCard) {
+        headingDeg.textContent = `${rounded}`; 
+        headingCard.textContent = getCardinal(rounded);
+        
+        if (rounded === 0 || rounded === 90 || rounded === 180 || rounded === 270) {
+          headingDeg.classList.add('text-green-500');
+          headingDeg.classList.remove('text-zinc-900', 'dark:text-white');
+          headingCard.classList.add('text-green-500');
+          headingCard.classList.remove('text-rose-500', 'text-zinc-500', 'dark:text-zinc-400');
+          
+          if (alignmentLine) {
+            alignmentLine.classList.replace('bg-rose-500', 'bg-green-500');
+            alignmentLine.classList.replace('shadow-[0_0_10px_rgba(244,63,94,0.5)]', 'shadow-[0_0_10px_rgba(34,197,94,0.5)]');
+          }
+        } else {
+          headingDeg.classList.remove('text-green-500');
+          headingDeg.classList.add('text-zinc-900', 'dark:text-white');
+          headingCard.classList.remove('text-green-500');
+          headingCard.classList.add('text-rose-500'); 
+          
+          if (alignmentLine) {
+            alignmentLine.classList.replace('bg-green-500', 'bg-rose-500');
+            alignmentLine.classList.replace('shadow-[0_0_10px_rgba(34,197,94,0.5)]', 'shadow-[0_0_10px_rgba(244,63,94,0.5)]');
+          }
+        }
+      }
+    }
+
+    function animateCompass() {
+      smoothedRotation += (targetRotation - smoothedRotation) * 0.05;
+      if (dial) {
+        dial.style.transition = "none"; 
+        dial.style.transform = `rotate(${smoothedRotation}deg)`;
+      }
+      requestAnimationFrame(animateCompass);
+    }
+    
+    animateCompass();
+
+    function updateLevelUI(beta, gamma) {
+      if (!levelBubble || !levelDeg) return;
+      const maxDist = 90; 
+      let x = (gamma / 45) * maxDist; 
+      let y = (beta / 45) * maxDist;
+      
+      const currentRadius = Math.sqrt(x*x + y*y);
+      if (currentRadius > maxDist) {
+        x = (x / currentRadius) * maxDist;
+        y = (y / currentRadius) * maxDist;
+      }
+      
+      levelBubble.style.transition = "transform 0.1s ease-out";
+      levelBubble.style.transform = `translate(${x}px, ${y}px)`;
+      
+      const totalTilt = Math.sqrt(beta*beta + gamma*gamma);
+      levelDeg.textContent = Math.min(totalTilt, 90).toFixed(1) + '°';
+
+      if (totalTilt < 0.5) {
+        levelDeg.classList.add('text-green-500');
+        levelDeg.classList.remove('text-zinc-900', 'dark:text-white');
+        levelBubble.classList.add('bg-green-500');
+        levelBubble.classList.remove('bg-blue-500');
+      } else {
+        levelDeg.classList.remove('text-green-500');
+        levelDeg.classList.add('text-zinc-900', 'dark:text-white');
+        levelBubble.classList.remove('bg-green-500');
+        levelBubble.classList.add('bg-blue-500');
+      }
+    }
+
+    function handleOrientation(event) {
+      let heading = 0;
+      
+      // Strict number check prevents 'undefined' from freezing the dial
+      if (typeof event.webkitCompassHeading === 'number') {
+        heading = event.webkitCompassHeading;
+      } else if (typeof event.alpha === 'number') {
+        heading = (360 - event.alpha) % 360;
+      }
+      
+      updateCompassUI(heading);
+      updateLevelUI(event.beta || 0, event.gamma || 0);
+    }
+
+    if (permtn) {
+      permtn.classList.remove('hidden');
+      permtn.addEventListener('click', async () => {
+        if (typeof DeviceOrientationEvent !== 'undefined' && typeof (DeviceOrientationEvent).requestPermission === 'function') {
+          try {
+            const res = await (DeviceOrientationEvent).requestPermission();
+            if (res === "granted") {
+              window.addEventListener("deviceorientation", handleOrientation, true);
+              permtn.classList.add('hidden');
+            }
+          } catch (err) {
+            console.error(err);
+          }
+        } else {
+          window.addEventListener("deviceorientationabsolute", handleOrientation, true);
+          permtn.classList.add('hidden');
+        }
+      });
+    } else {
+      window.addEventListener("deviceorientationabsolute", handleOrientation, true);
+    }
+
+    // Tabs
+    const tabCompass = document.getElementById('tab-compass');
+    const tabLevel = document.getElementById('tab-level');
+    const viewCompass = document.getElementById('view-compass');
+    const viewLevel = document.getElementById('view-level');
+
+    tabCompass?.addEventListener('click', () => {
+      tabCompass.className = "px-6 py-2 rounded-full bg-zinc-800 text-white shadow-md transition-colors";
+      tabCompass.setAttribute('aria-selected', 'true');
+      tabLevel.className = "px-6 py-2 rounded-full text-zinc-400 hover:text-white transition-colors";
+      tabLevel.setAttribute('aria-selected', 'false');
+      
+      viewCompass.classList.remove('hidden');
+      viewCompass.classList.add('flex');
+      viewLevel.classList.add('hidden');
+      viewLevel.classList.remove('flex');
+    });
+
+    tabLevel?.addEventListener('click', () => {
+      tabLevel.className = "px-6 py-2 rounded-full bg-zinc-800 text-white shadow-md transition-colors";
+      tabLevel.setAttribute('aria-selected', 'true');
+      tabCompass.className = "px-6 py-2 rounded-full text-zinc-400 hover:text-white transition-colors";
+      tabCompass.setAttribute('aria-selected', 'false');
+      
+      viewLevel.classList.remove('hidden');
+      viewLevel.classList.add('flex');
+      viewCompass.classList.add('hidden');
+      viewCompass.classList.remove('flex');
+    });
+
+    // Copy flag URL helper
+    const copyBtn = document.getElementById("btn-copy-flag");
+    copyBtn?.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText("chrome://flags/#enable-generic-sensor-extra-classes");
+        copyBtn.textContent = "Copied!";
+        setTimeout(() => { copyBtn.textContent = "Copy Link"; }, 2000);
+      } catch (err) {
+        console.error(err);
+      }
+    });
+
+    // Sensor availability fallback check
+    let sensorReceived = false;
+    const sensorWarning = document.getElementById("sensor-warning");
+
+    function checkOrientationWorking(e) {
+      if (e.alpha !== null || e.webkitCompassHeading !== undefined) {
+        sensorReceived = true;
+        sensorWarning?.classList.add("hidden");
+      }
+    }
+
+    window.addEventListener("deviceorientation", checkOrientationWorking, { once: true });
+    window.addEventListener("deviceorientationabsolute", checkOrientationWorking, { once: true });
+
+    // If after 2.5 seconds no orientation data arrived, reveal the warning banner
+    setTimeout(() => {
+      if (!sensorReceived) {
+        sensorWarning?.classList.remove("hidden");
+      }
+    }, 2500);
+
+    // Initialize with 0
+    updateCompassUI(0);
+  </script>
+</body>
+</html>

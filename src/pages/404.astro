@@ -1,0 +1,78 @@
+---
+import '../styles/global.css';
+---
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404: Page Not Found | Compass Rose Tool</title>
+  <script is:inline>
+    const theme = (() => {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) return localStorage.getItem('theme');
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark';
+      return 'light';
+    })();
+    if (theme === 'light') document.documentElement.classList.remove('dark');
+    else document.documentElement.classList.add('dark');
+  </script>
+</head>
+<body class="bg-zinc-50 dark:bg-[#09090b] text-zinc-900 dark:text-zinc-300 font-sans flex flex-col min-h-screen transition-colors duration-200">
+  
+  <header class="w-full border-b border-zinc-200 dark:border-zinc-800/80 bg-white/80 dark:bg-[#09090b]/80 backdrop-blur-xl sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3 cursor-pointer" aria-label="Go to homepage">
+        <img src="/favicon-96x96.png" alt="Compass Rose Logo" class="w-9 h-9 object-contain drop-shadow-sm" aria-hidden="true" />
+        <div class="text-xl font-extrabold tracking-tight text-zinc-900 dark:text-white m-0">Compass Rose</div>
+      </a>
+      <button id="theme-toggle" class="p-2.5 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors border border-zinc-200 dark:border-zinc-700/50">
+        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="flex-grow w-full flex items-center justify-center px-4 py-12">
+    <div class="max-w-md w-full text-center">
+      <div class="text-rose-500 font-mono text-6xl font-black mb-4 tracking-tighter">404</div>
+      <h1 class="text-3xl font-black text-zinc-900 dark:text-white mb-4">Lost your bearing?</h1>
+      <p class="text-zinc-600 dark:text-zinc-400 mb-8 text-[15px]">The page you are looking for doesn't exist or has been moved.</p>
+      
+      <a href="/" class="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-bold shadow-md hover:opacity-90 transition-opacity">
+        Return to Compass
+      </a>
+    </div>
+  </main>
+
+  <footer class="w-full bg-zinc-50 dark:bg-[#09090b] py-10 border-t border-zinc-200 dark:border-zinc-800 transition-colors duration-200 mt-auto">
+    <div class="max-w-4xl mx-auto px-4 flex flex-col items-center gap-6">
+      <nav class="flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm font-semibold text-zinc-500 dark:text-zinc-400">
+        <a href="/about" class="hover:text-zinc-900 dark:hover:text-white transition-colors">About Us</a>
+        <a href="/privacy" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Privacy Policy</a>
+        <a href="/terms" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Terms & Conditions</a>
+        <a href="/contact" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Contact Us</a>
+      </nav>
+      <p class="text-sm font-semibold text-zinc-400 dark:text-zinc-600">&copy; 2026 Compass Rose Tool. Free to use, no account needed.</p>
+    </div>
+  </footer>
+
+  <script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const darkIcon = document.getElementById('theme-toggle-dark-icon');
+    const lightIcon = document.getElementById('theme-toggle-light-icon');
+    if (document.documentElement.classList.contains('dark')) lightIcon?.classList.remove('hidden');
+    else darkIcon?.classList.remove('hidden');
+    themeToggleBtn?.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      if (document.documentElement.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+        lightIcon?.classList.remove('hidden'); darkIcon?.classList.add('hidden');
+      } else {
+        localStorage.setItem('theme', 'light');
+        darkIcon?.classList.remove('hidden'); lightIcon?.classList.add('hidden');
+      }
+    });
+  </script>
+</body>
+</html>
