@@ -1,5 +1,5 @@
 ---
-// src/pages/blog/decoding-the-compass-rose.astro
+import '../../styles/global.css';
 ---
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
@@ -8,28 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Decoding the Compass Rose: From Ancient Mariners to Digital Navigation</title>
   <meta name="description" content="Discover the complete history, geometry, and modern digital usage of the compass rose in our comprehensive navigation guide." />
-  <link rel="canonical" href="https://compassrosetool.com/blog/decoding-the-compass-rose/" />
-  
-  <!-- Add Article Schema for SEO -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "Decoding the Compass Rose: From Ancient Mariners to Digital Navigation",
-      "author": {
-        "@type": "Organization",
-        "name": "Compass Rose Tool"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Compass Rose Tool",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://compassrosetool.com/favicon.ico"
-        }
-      }
-    }
-  </script>
   <script is:inline>
     if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
       if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
@@ -38,21 +16,35 @@
     }
   </script>
 </head>
-<body class="bg-zinc-50 dark:bg-[#09090b] text-zinc-900 dark:text-zinc-300 font-sans antialiased transition-colors duration-200 leading-relaxed">
+<body class="bg-zinc-50 dark:bg-[#09090b] text-zinc-900 dark:text-zinc-300 font-sans antialiased transition-colors duration-200 leading-relaxed flex flex-col min-h-screen">
   
-  <!-- Simple Header -->
-  <header class="w-full border-b border-zinc-200 dark:border-zinc-800 p-4 sticky top-0 bg-zinc-50/80 dark:bg-[#09090b]/80 backdrop-blur-md z-50">
-    <div class="max-w-3xl mx-auto flex items-center justify-between">
-      <a href="/" class="text-lg font-bold tracking-tight hover:opacity-80 transition-opacity">
-        <span class="text-rose-500">✛</span> Compass Rose
+  <!-- Your Original Header -->
+  <header class="w-full border-b border-zinc-200 dark:border-zinc-800/80 bg-white/80 dark:bg-[#09090b]/80 backdrop-blur-xl sticky top-0 z-50 transition-colors duration-200">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3 cursor-pointer">
+        <img src="/favicon-96x96.png" alt="Compass Rose Logo" class="w-9 h-9 object-contain drop-shadow-sm" aria-hidden="true" />
+        <div class="text-xl font-extrabold tracking-tight text-zinc-900 dark:text-white m-0">Compass Rose</div>
       </a>
-      <a href="/blog" class="text-sm font-medium hover:text-rose-500 transition-colors">← Back to Blog</a>
+      <div class="flex items-center gap-6">
+        <nav class="text-sm font-semibold text-zinc-500 dark:text-zinc-400 hidden sm:flex gap-4">
+          <a href="/blog" class="hover:text-zinc-900 dark:hover:text-white transition-colors">← Back to Blog</a>
+        </nav>
+        
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="p-2.5 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors border border-zinc-200 dark:border-zinc-700/50 focus:outline-none" aria-label="Toggle Dark Mode">
+          <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+          </svg>
+          <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
     </div>
   </header>
 
-  <article class="max-w-3xl mx-auto px-4 py-12 sm:py-20">
+  <article class="max-w-3xl w-full mx-auto px-4 py-12 sm:py-20 flex-grow">
     
-    <!-- Article Header -->
     <header class="mb-12 border-b border-zinc-200 dark:border-zinc-800 pb-8">
       <div class="flex items-center gap-3 mb-6">
         <span class="px-3 py-1 rounded-full bg-rose-500/10 text-rose-600 dark:text-rose-400 text-sm font-bold uppercase tracking-wider">History & Design</span>
@@ -62,7 +54,6 @@
       <p class="text-xl text-zinc-600 dark:text-zinc-400">For centuries, a single geometric star has stood between humanity and being hopelessly lost. Explore the intersection of meteorology, culture, and planetary science.</p>
     </header>
 
-    <!-- Article Content (Prose Styling) -->
     <div class="space-y-8 text-lg text-zinc-700 dark:text-zinc-300">
       
       <p>Whether you are examining a dust-covered parchment map from the 15th century or relying on a high-speed digital compass on your smartphone, the compass rose remains the beating heart of all navigation. But this emblem is far more than just a cluster of arrows pointing North.</p>
@@ -81,7 +72,6 @@
       <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white mt-12 mb-4">3. How to Read a 32-Point Compass Rose</h2>
       <p>While modern digital tools give you exact degree readouts (0° to 359°), traditional navigation relied on breaking the circle into 32 equal slices, each measuring exactly 11.25 degrees.</p>
       
-      <!-- Styled Data Table -->
       <div class="overflow-x-auto mt-6 mb-8 rounded-xl border border-zinc-200 dark:border-zinc-800">
         <table class="w-full text-left border-collapse">
           <thead>
@@ -122,11 +112,9 @@
       <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white mt-12 mb-4">5. Modern Usage: The Digital Age</h2>
       <p>Today, modern mobile devices are equipped with micro-electromechanical systems (MEMS)—specifically, a magnetometer to read the Earth's magnetic field, and an accelerometer to understand how the phone is tilted. When combined through software, these sensors generate a highly accurate, digital compass rose on your screen.</p>
       
-      <!-- Call out box with the internal link -->
       <div class="my-8 p-6 bg-rose-50 dark:bg-rose-500/5 rounded-2xl border border-rose-200 dark:border-rose-900/30">
         <p class="m-0 text-zinc-800 dark:text-zinc-200">
           <strong>Try it yourself:</strong> If you want to see this centuries-old geometry powered by cutting-edge web technology, you can use our free 
-          <!-- Here is the target="_blank" internal link you requested -->
           <a href="/" target="_blank" rel="noopener noreferrer" class="font-bold text-rose-600 dark:text-rose-400 hover:underline hover:text-rose-500 transition-colors">
             Compass Rose & Digital Spirit Level
           </a>. 
@@ -139,5 +127,43 @@
     </div>
   </article>
 
+  <!-- Your Original Footer -->
+  <footer class="w-full bg-zinc-50 dark:bg-[#09090b] py-10 border-t border-zinc-200 dark:border-zinc-800 transition-colors duration-200 mt-auto">
+    <div class="max-w-4xl mx-auto px-4 flex flex-col items-center gap-6">
+      <nav class="flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm font-semibold text-zinc-500 dark:text-zinc-400">
+        <a href="/about" class="hover:text-zinc-900 dark:hover:text-white transition-colors">About Us</a>
+        <a href="/privacy" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Privacy Policy</a>
+        <a href="/terms" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Terms & Conditions</a>
+        <a href="/contact" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Contact Us</a>
+      </nav>
+      <p class="text-sm font-semibold text-zinc-400 dark:text-zinc-600">&copy; 2026 Compass Rose Tool. Free to use, no account needed.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Theme Toggle Logic for Blog Article
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const darkIcon = document.getElementById('theme-toggle-dark-icon');
+    const lightIcon = document.getElementById('theme-toggle-light-icon');
+
+    if (document.documentElement.classList.contains('dark')) {
+      lightIcon?.classList.remove('hidden');
+    } else {
+      darkIcon?.classList.remove('hidden');
+    }
+
+    themeToggleBtn?.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      if (document.documentElement.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+        lightIcon?.classList.remove('hidden');
+        darkIcon?.classList.add('hidden');
+      } else {
+        localStorage.setItem('theme', 'light');
+        darkIcon?.classList.remove('hidden');
+        lightIcon?.classList.add('hidden');
+      }
+    });
+  </script>
 </body>
 </html>
