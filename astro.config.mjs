@@ -6,6 +6,7 @@ import cloudflare from '@astrojs/cloudflare';
 export default defineConfig({
   output: 'server',
   site: 'https://compassrosetool.com',
+  trailingSlash: 'never',
   vite: {
     plugins: [tailwindcss()],
   },
