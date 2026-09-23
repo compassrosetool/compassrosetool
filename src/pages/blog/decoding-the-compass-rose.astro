@@ -18,7 +18,6 @@ import '../../styles/global.css';
 </head>
 <body class="bg-zinc-50 dark:bg-[#09090b] text-zinc-900 dark:text-zinc-300 font-sans antialiased transition-colors duration-200 leading-relaxed flex flex-col min-h-screen">
   
-  <!-- Your Original Header -->
   <header class="w-full border-b border-zinc-200 dark:border-zinc-800/80 bg-white/80 dark:bg-[#09090b]/80 backdrop-blur-xl sticky top-0 z-50 transition-colors duration-200">
     <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
       <a href="/" class="flex items-center gap-3 cursor-pointer">
@@ -27,10 +26,11 @@ import '../../styles/global.css';
       </a>
       <div class="flex items-center gap-6">
         <nav class="text-sm font-semibold text-zinc-500 dark:text-zinc-400 hidden sm:flex gap-4">
-          <a href="/blog" class="hover:text-zinc-900 dark:hover:text-white transition-colors">← Back to Blog</a>
+          <a href="/#about" class="hover:text-zinc-900 dark:hover:text-white transition-colors">About Tool</a>
+          <a href="/#faq" class="hover:text-zinc-900 dark:hover:text-white transition-colors">FAQ</a>
+          <a href="/blog" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Blog</a>
         </nav>
         
-        <!-- Theme Toggle Button -->
         <button id="theme-toggle" class="p-2.5 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors border border-zinc-200 dark:border-zinc-700/50 focus:outline-none" aria-label="Toggle Dark Mode">
           <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
             <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
@@ -51,28 +51,60 @@ import '../../styles/global.css';
         <span class="text-sm text-zinc-500">10 Min Read</span>
       </div>
       <h1 class="text-4xl sm:text-5xl font-black tracking-tight text-zinc-900 dark:text-white leading-tight mb-6">Decoding the Compass Rose: From Ancient Mariners to Digital Navigation</h1>
-      <p class="text-xl text-zinc-600 dark:text-zinc-400">For centuries, a single geometric star has stood between humanity and being hopelessly lost. Explore the intersection of meteorology, culture, and planetary science.</p>
     </header>
 
     <div class="space-y-8 text-lg text-zinc-700 dark:text-zinc-300">
       
-      <p>Whether you are examining a dust-covered parchment map from the 15th century or relying on a high-speed digital compass on your smartphone, the compass rose remains the beating heart of all navigation. But this emblem is far more than just a cluster of arrows pointing North.</p>
+      <p>For centuries, a single geometric star has stood between humanity and being hopelessly lost. Whether you are examining a dust-covered parchment map from the 15th century or relying on a high-speed digital compass on your smartphone, the compass rose remains the beating heart of all navigation.</p>
+      
+      <p>But this emblem is far more than just a cluster of arrows pointing North. It is a brilliant intersection of ancient meteorology, human culture, mathematical design, and planetary science. Let's dive deep into the anatomy of the compass rose, tracing its growth from ancient wind maps to the digital sensors in your pocket.</p>
 
       <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white mt-12 mb-4">1. The History: From Wind Catchers to Magnetism</h2>
-      <p>The origins of the compass rose have nothing to do with magnetism. Early Mediterranean mariners navigated by the sky and the wind. The earliest "roses" were actually <em>wind roses</em>—charts that tracked the direction of the eight principal winds of the Mediterranean Sea.</p>
-      <p>Before the magnetic needle was introduced to Europe, sailors memorized winds like the icy <em>Tramontana</em> from the North and the warm <em>Scirocco</em> from the Southeast. When cartographers began drawing these directional winds on maps, they used intersecting lines radiating from a central point. As these lines crossed, they created a star-like, petaled pattern—which is precisely why it was dubbed a "rose."</p>
+      
+      <p>The origins of the compass rose have nothing to do with magnetism. Early Mediterranean mariners navigated by the sky and the wind. The earliest "roses" were actually wind roses—charts that tracked the direction of the eight principal winds of the Mediterranean Sea.</p>
+      
+      <p>Before the magnetic needle was introduced to Europe, sailors memorized winds like the icy Tramontana from the North and the warm Scirocco from the Southeast. When cartographers began drawing these directional winds on maps, they used intersecting lines radiating from a central point. As these lines crossed, they created a star-like, petaled pattern—which is precisely why it was dubbed a "rose."</p>
+      
+      <p>When the magnetized needle arrived from ancient China and was paired with these wind charts in the 1300s, the modern compass rose was born. It fused the physical reality of Earth's magnetism with the established visual language of the wind rose.</p>
+
+      <div class="p-6 bg-zinc-100 dark:bg-zinc-800/50 rounded-xl border border-zinc-200 dark:border-zinc-700 text-sm italic">
+        <strong>Visual Component Idea:</strong> A scrolling timeline animation that starts with an ancient Greek wind chart, morphs into a medieval 8-point map rose, and finally transforms into a glowing, modern digital compass dial as the user scrolls down the page.
+      </div>
 
       <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white mt-12 mb-4">2. The Masterclass in Design & Geometry</h2>
-      <p>The design of the compass rose is a fascinating study in functional UX (User Experience) design, created hundreds of years before the concept existed. Every shape, color, and line was engineered for life-or-death readability under terrible conditions.</p>
-      <ul class="list-disc pl-6 space-y-2 mt-4 marker:text-rose-500">
-        <li><strong>The Fleur-de-lis (North):</strong> Cartographers traditionally marked the North point with an ornate lily or spearhead. This made it instantly recognizable, allowing a navigator to orient the map in a fraction of a second.</li>
-        <li><strong>The Cross (East):</strong> On medieval European maps, the East point was often marked with a Christian cross. Early maps were often oriented with East at the top (which is where the word "orientation" comes from).</li>
+      
+      <p>The design of the compass rose is a fascinating study in functional UX (User Experience) design, created hundreds of years before the concept of UX existed. Every shape, color, and line was engineered for life-or-death readability under terrible conditions—such as reading a map by a flickering candle on a pitching ship.</p>
+      
+      <h3 class="text-xl font-bold text-zinc-900 dark:text-white mt-8 mb-3">The Evolution of the Points</h3>
+      <p>The geometry of the rose grew in complexity as ships ventured further into open oceans:</p>
+      <ul class="list-disc pl-6 space-y-2 marker:text-rose-500">
+        <li><strong>The 4-Point Rose:</strong> Focused solely on the Cardinal points (North, East, South, West).</li>
+        <li><strong>The 8-Point Rose:</strong> Added the Intercardinal points (NE, SE, SW, NW).</li>
+        <li><strong>The 16-Point & 32-Point Roses:</strong> Introduced to allow for precise "tacking" into the wind.</li>
+      </ul>
+
+      <h3 class="text-xl font-bold text-zinc-900 dark:text-white mt-8 mb-3">The Hidden Symbolism in the Shapes</h3>
+      <p>If you look at a classic cartographic compass rose, you will notice that North and East are almost always uniquely decorated:</p>
+      <ul class="list-disc pl-6 space-y-2 marker:text-rose-500">
+        <li><strong>The Fleur-de-lis (North):</strong> Cartographers traditionally marked the North point with an ornate lily or spearhead. This made it instantly recognizable, allowing a navigator to orient the map in a fraction of a second, even in low light.</li>
+        <li><strong>The Cross (East):</strong> On medieval European maps, the East point was often marked with a Christian cross. This was because Jerusalem lay to the East of Europe, and early maps were often oriented with East at the top (which is where the word "orientation" comes from).</li>
+      </ul>
+
+      <h3 class="text-xl font-bold text-zinc-900 dark:text-white mt-8 mb-3">The Strategic Color Palette</h3>
+      <p>Why do classic compass roses look so vibrant? It wasn't just for decoration. Early mapmakers used a strict color-coding system to prevent sailors from misreading the intersecting lines:</p>
+      <ul class="list-disc pl-6 space-y-2 marker:text-rose-500">
+        <li><strong>Black:</strong> Used exclusively for the 8 principal winds/cardinal directions to provide maximum contrast.</li>
+        <li><strong>Green or Blue:</strong> Used for the half-winds (intercardinal points).</li>
+        <li><strong>Red:</strong> Used for the quarter-winds, ensuring they didn't visually blend into the primary black lines.</li>
       </ul>
 
       <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white mt-12 mb-4">3. How to Read a 32-Point Compass Rose</h2>
-      <p>While modern digital tools give you exact degree readouts (0° to 359°), traditional navigation relied on breaking the circle into 32 equal slices, each measuring exactly 11.25 degrees.</p>
       
-      <div class="overflow-x-auto mt-6 mb-8 rounded-xl border border-zinc-200 dark:border-zinc-800">
+      <p>To truly understand maritime navigation, you need to know how to read the full 32-point compass rose. While modern digital tools give you exact degree readouts (0° to 359°), traditional navigation relied on breaking the circle into 32 equal slices, each measuring exactly 11.25 degrees.</p>
+      
+      <p>Here is the structural flow of how the points break down:</p>
+      
+      <div class="overflow-x-auto mt-6 mb-6 rounded-xl border border-zinc-200 dark:border-zinc-800">
         <table class="w-full text-left border-collapse">
           <thead>
             <tr class="bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-white">
@@ -99,35 +131,62 @@ import '../../styles/global.css';
               <td class="p-4 font-semibold text-rose-500">Tertiary</td>
               <td class="p-4">Secondary Intercardinal</td>
               <td class="p-4">NNE, ENE, ESE, SSE</td>
-              <td class="p-4 font-mono">22.5°, 67.5°, 112.5°</td>
+              <td class="p-4 font-mono">22.5°, 67.5°, 112.5°, 157.5°</td>
+            </tr>
+            <tr class="hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-colors">
+              <td class="p-4 font-semibold text-rose-500">Quaternary</td>
+              <td class="p-4">The "By" Points</td>
+              <td class="p-4">North by East (NbE)</td>
+              <td class="p-4 font-mono">11.25°, 33.75°, 56.25°</td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white mt-12 mb-4">4. Working With the Magnetic Compass</h2>
-      <p>Deep beneath the Earth's crust, churning liquid iron creates a massive geodynamo. A traditional compass contains a lightweight, magnetized needle balanced on a nearly frictionless pivot. Because the Earth's magnetic North Pole emits an attractive force, the "North" end of the needle is constantly pulled into alignment with these invisible magnetic field lines.</p>
-      <p>However, navigating requires accounting for <strong>Magnetic Declination</strong>. The Earth's geographic North Pole (True North) and the magnetic North Pole are not in the exact same place. Navigators must mathematically adjust their compass rose readings to correct this error and avoid sailing hundreds of miles off course.</p>
-
-      <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white mt-12 mb-4">5. Modern Usage: The Digital Age</h2>
-      <p>Today, modern mobile devices are equipped with micro-electromechanical systems (MEMS)—specifically, a magnetometer to read the Earth's magnetic field, and an accelerometer to understand how the phone is tilted. When combined through software, these sensors generate a highly accurate, digital compass rose on your screen.</p>
-      
-      <div class="my-8 p-6 bg-rose-50 dark:bg-rose-500/5 rounded-2xl border border-rose-200 dark:border-rose-900/30">
-        <p class="m-0 text-zinc-800 dark:text-zinc-200">
-          <strong>Try it yourself:</strong> If you want to see this centuries-old geometry powered by cutting-edge web technology, you can use our free 
-          <a href="/" target="_blank" rel="noopener noreferrer" class="font-bold text-rose-600 dark:text-rose-400 hover:underline hover:text-rose-500 transition-colors">
-            Compass Rose & Digital Spirit Level
-          </a>. 
-          It takes the classic 32-point design and pairs it with instant hardware sensor readouts to find True North and measure surface tilt—all directly from your browser.
-        </p>
+      <div class="p-6 bg-zinc-100 dark:bg-zinc-800/50 rounded-xl border border-zinc-200 dark:border-zinc-700 text-sm italic">
+        <strong>Interactive Component Idea:</strong> Embed an SVG compass rose here. When a reader clicks or taps a row in the table above, the corresponding points on the SVG compass light up, helping them visualize the geometry.
       </div>
 
+      <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white mt-12 mb-4">4. The Science: Working With the Magnetic Compass</h2>
+      
+      <p>To trust a compass rose, you must understand the science powering the magnetic compass.</p>
+      
+      <p>Deep beneath the Earth's crust, churning liquid iron creates a massive geodynamo. This generates a magnetic field that envelops the globe. A traditional compass contains a lightweight, magnetized needle balanced on a nearly frictionless pivot. Because the Earth's magnetic North Pole emits an attractive force, the "North" end of the needle is constantly pulled into alignment with these invisible magnetic field lines.</p>
+      
+      <p>However, working with a magnetic compass requires accounting for <strong>Magnetic Declination</strong>.</p>
+      
+      <p>The Earth's geographic North Pole (True North—the top of the map) and the magnetic North Pole (where your needle actually points) are not in the exact same place. Depending on where you are standing on the planet, your compass might point several degrees away from True North. Navigators must mathematically adjust their compass rose readings to correct this error and avoid sailing hundreds of miles off course.</p>
+
+      <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white mt-12 mb-4">5. Culture and Symbolism</h2>
+      
+      <p>Beyond its use as a tool, the compass rose has deeply permeated human culture. Because it fundamentally represents guidance, discovering one's path, and returning home safely, it has become a powerful global motif.</p>
+      
+      <p>It is the emblem of the NATO alliance, representing a shared direction. It is embedded into the floor plans of massive public squares and airports to subconsciously orient crowds. In the tattoo world, it is one of the most requested designs by travelers, symbolizing a protective ward against getting lost in life.</p>
+
+      <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white mt-12 mb-4">6. Types of Compass Roses</h2>
+      
+      <p>Throughout history, the design has adapted to its medium:</p>
+      <ul class="list-disc pl-6 space-y-2 marker:text-rose-500">
+        <li><strong>Cartographic Roses:</strong> Flat, highly decorative, drawn on paper or parchment, used for aligning maps to reality.</li>
+        <li><strong>Nautical Dials:</strong> Physical disks where the entire compass rose rotates beneath a stationary line (the lubber line), housed inside ships' binnacles.</li>
+        <li><strong>Aviation Roses:</strong> Simplified, high-contrast digital displays on aircraft dashboards, optimized for split-second readability at high speeds.</li>
+      </ul>
+
+      <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white mt-12 mb-4">7. Modern Usage: The Compass Rose in the Digital Age</h2>
+      
+      <p>Today, you don't need a heavy brass instrument to find your way. The modern usage of the compass rose lives inside web browsers and smartphone hardware.</p>
+      
+      <p>Modern mobile devices are equipped with micro-electromechanical systems (MEMS)—specifically, a magnetometer to read the Earth's magnetic field, and an accelerometer to understand how the phone is tilted. When combined through software, these sensors generate a highly accurate, digital compass rose on your screen.</p>
+      
+      <p>Instead of doing manual math to calculate magnetic declination, modern applications use your GPS coordinates to automatically calculate True North in real-time.</p>
+      
+      <p>If you want to see this centuries-old geometry powered by cutting-edge web technology, you can use our free <a href="/" target="_blank" rel="noopener noreferrer" class="font-bold text-rose-600 dark:text-rose-400 hover:underline hover:text-rose-500 transition-colors">Compass Rose & Digital Spirit Level</a>. It takes the classic 32-point design and pairs it with instant hardware sensor readouts, allowing you to find True North, track real-time degrees, and measure surface tilt—all directly from your browser without downloading an app.</p>
+      
       <p>The medium has changed from parchment to pixels, but the compass rose remains exactly what it has always been: our ultimate guide through the unknown.</p>
 
     </div>
   </article>
 
-  <!-- Your Original Footer -->
   <footer class="w-full bg-zinc-50 dark:bg-[#09090b] py-10 border-t border-zinc-200 dark:border-zinc-800 transition-colors duration-200 mt-auto">
     <div class="max-w-4xl mx-auto px-4 flex flex-col items-center gap-6">
       <nav class="flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm font-semibold text-zinc-500 dark:text-zinc-400">
@@ -141,7 +200,6 @@ import '../../styles/global.css';
   </footer>
 
   <script>
-    // Theme Toggle Logic for Blog Article
     const themeToggleBtn = document.getElementById('theme-toggle');
     const darkIcon = document.getElementById('theme-toggle-dark-icon');
     const lightIcon = document.getElementById('theme-toggle-light-icon');
