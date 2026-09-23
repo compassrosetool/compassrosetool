@@ -43,23 +43,28 @@ import '../../styles/global.css';
     </div>
   </header>
 
-  <article class="max-w-3xl w-full mx-auto px-4 py-12 sm:py-20 flex-grow">
+  <article class="max-w-4xl w-full mx-auto px-4 py-12 sm:py-20 flex-grow">
     
     <header class="mb-12 border-b border-zinc-200 dark:border-zinc-800 pb-8">
       <div class="flex items-center gap-3 mb-6">
         <span class="px-3 py-1 rounded-full bg-rose-500/10 text-rose-600 dark:text-rose-400 text-sm font-bold uppercase tracking-wider">History & Design</span>
         <span class="text-sm text-zinc-500">10 Min Read</span>
       </div>
-      <h1 class="text-4xl sm:text-5xl font-black tracking-tight text-zinc-900 dark:text-white leading-tight mb-6">Decoding the Compass Rose: From Ancient Mariners to Digital Navigation</h1>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-zinc-900 dark:text-white leading-tight mb-8">Decoding the Compass Rose: From Ancient Mariners to Digital Navigation</h1>
+      
+      <!-- Top Hero Image -->
+      <div class="w-full aspect-[21/9] bg-zinc-200 dark:bg-zinc-800 rounded-2xl overflow-hidden shadow-xl border border-zinc-200 dark:border-zinc-800">
+        <img src="/blog-hero.jpg" alt="Timeline of a compass transitioning from parchment to digital" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=2000'" />
+      </div>
     </header>
 
-    <div class="space-y-8 text-lg text-zinc-700 dark:text-zinc-300">
+    <div class="space-y-8 text-lg text-zinc-700 dark:text-zinc-300 max-w-3xl mx-auto">
       
       <p>For centuries, a single geometric star has stood between humanity and being hopelessly lost. Whether you are examining a dust-covered parchment map from the 15th century or relying on a high-speed digital compass on your smartphone, the compass rose remains the beating heart of all navigation.</p>
       
       <p>But this emblem is far more than just a cluster of arrows pointing North. It is a brilliant intersection of ancient meteorology, human culture, mathematical design, and planetary science. Let's dive deep into the anatomy of the compass rose, tracing its growth from ancient wind maps to the digital sensors in your pocket.</p>
 
-      <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white mt-12 mb-4">1. The History: From Wind Catchers to Magnetism</h2>
+      <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white mt-16 mb-6">1. The History: From Wind Catchers to Magnetism</h2>
       
       <p>The origins of the compass rose have nothing to do with magnetism. Early Mediterranean mariners navigated by the sky and the wind. The earliest "roses" were actually wind roses—charts that tracked the direction of the eight principal winds of the Mediterranean Sea.</p>
       
@@ -67,28 +72,26 @@ import '../../styles/global.css';
       
       <p>When the magnetized needle arrived from ancient China and was paired with these wind charts in the 1300s, the modern compass rose was born. It fused the physical reality of Earth's magnetism with the established visual language of the wind rose.</p>
 
-      <div class="p-6 bg-zinc-100 dark:bg-zinc-800/50 rounded-xl border border-zinc-200 dark:border-zinc-700 text-sm italic">
-        <strong>Visual Component Idea:</strong> A scrolling timeline animation that starts with an ancient Greek wind chart, morphs into a medieval 8-point map rose, and finally transforms into a glowing, modern digital compass dial as the user scrolls down the page.
+      <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white mt-16 mb-6">2. The Masterclass in Design & Geometry</h2>
+      
+      <!-- Side-by-side Layout for Text and Image -->
+      <div class="flex flex-col md:flex-row gap-8 items-start mb-8">
+        <div class="flex-1 space-y-6">
+          <p>The design of the compass rose is a fascinating study in functional UX (User Experience) design, created hundreds of years before the concept of UX existed. Every shape, color, and line was engineered for life-or-death readability under terrible conditions—such as reading a map by a flickering candle on a pitching ship.</p>
+          
+          <h3 class="text-xl font-bold text-zinc-900 dark:text-white">The Hidden Symbolism in the Shapes</h3>
+          <p>If you look at a classic cartographic compass rose, you will notice that North and East are almost always uniquely decorated:</p>
+          <ul class="list-disc pl-6 space-y-2 marker:text-rose-500">
+            <li><strong>The Fleur-de-lis (North):</strong> Cartographers traditionally marked the North point with an ornate lily or spearhead. This made it instantly recognizable, allowing a navigator to orient the map in a fraction of a second.</li>
+            <li><strong>The Cross (East):</strong> On medieval European maps, the East point was often marked with a Christian cross. This was because Jerusalem lay to the East of Europe, and early maps were oriented with East at the top.</li>
+          </ul>
+        </div>
+        
+        <!-- Secondary Image (Design) -->
+        <div class="w-full md:w-1/3 shrink-0 bg-zinc-200 dark:bg-zinc-800 rounded-xl overflow-hidden shadow-lg border border-zinc-200 dark:border-zinc-800">
+          <img src="/blog-design.jpg" alt="Vintage map compass rose with Fleur-de-lis" class="w-full h-auto object-cover aspect-[4/5]" onerror="this.src='https://images.unsplash.com/photo-1549423985-79b88231c69c?auto=format&fit=crop&q=80&w=800'" />
+        </div>
       </div>
-
-      <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white mt-12 mb-4">2. The Masterclass in Design & Geometry</h2>
-      
-      <p>The design of the compass rose is a fascinating study in functional UX (User Experience) design, created hundreds of years before the concept of UX existed. Every shape, color, and line was engineered for life-or-death readability under terrible conditions—such as reading a map by a flickering candle on a pitching ship.</p>
-      
-      <h3 class="text-xl font-bold text-zinc-900 dark:text-white mt-8 mb-3">The Evolution of the Points</h3>
-      <p>The geometry of the rose grew in complexity as ships ventured further into open oceans:</p>
-      <ul class="list-disc pl-6 space-y-2 marker:text-rose-500">
-        <li><strong>The 4-Point Rose:</strong> Focused solely on the Cardinal points (North, East, South, West).</li>
-        <li><strong>The 8-Point Rose:</strong> Added the Intercardinal points (NE, SE, SW, NW).</li>
-        <li><strong>The 16-Point & 32-Point Roses:</strong> Introduced to allow for precise "tacking" into the wind.</li>
-      </ul>
-
-      <h3 class="text-xl font-bold text-zinc-900 dark:text-white mt-8 mb-3">The Hidden Symbolism in the Shapes</h3>
-      <p>If you look at a classic cartographic compass rose, you will notice that North and East are almost always uniquely decorated:</p>
-      <ul class="list-disc pl-6 space-y-2 marker:text-rose-500">
-        <li><strong>The Fleur-de-lis (North):</strong> Cartographers traditionally marked the North point with an ornate lily or spearhead. This made it instantly recognizable, allowing a navigator to orient the map in a fraction of a second, even in low light.</li>
-        <li><strong>The Cross (East):</strong> On medieval European maps, the East point was often marked with a Christian cross. This was because Jerusalem lay to the East of Europe, and early maps were often oriented with East at the top (which is where the word "orientation" comes from).</li>
-      </ul>
 
       <h3 class="text-xl font-bold text-zinc-900 dark:text-white mt-8 mb-3">The Strategic Color Palette</h3>
       <p>Why do classic compass roses look so vibrant? It wasn't just for decoration. Early mapmakers used a strict color-coding system to prevent sailors from misreading the intersecting lines:</p>
@@ -98,92 +101,114 @@ import '../../styles/global.css';
         <li><strong>Red:</strong> Used for the quarter-winds, ensuring they didn't visually blend into the primary black lines.</li>
       </ul>
 
-      <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white mt-12 mb-4">3. How to Read a 32-Point Compass Rose</h2>
+      <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white mt-16 mb-6">3. How to Read a 32-Point Compass Rose</h2>
       
-      <p>To truly understand maritime navigation, you need to know how to read the full 32-point compass rose. While modern digital tools give you exact degree readouts (0° to 359°), traditional navigation relied on breaking the circle into 32 equal slices, each measuring exactly 11.25 degrees.</p>
+      <p>To truly understand maritime navigation, you need to know how to read the full 32-point compass rose. Traditional navigation relied on breaking the circle into 32 equal slices, each measuring exactly 11.25 degrees.</p>
       
-      <p>Here is the structural flow of how the points break down:</p>
-      
-      <div class="overflow-x-auto mt-6 mb-6 rounded-xl border border-zinc-200 dark:border-zinc-800">
-        <table class="w-full text-left border-collapse">
-          <thead>
-            <tr class="bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-white">
-              <th class="p-4 font-bold text-sm uppercase tracking-wider border-b border-zinc-200 dark:border-zinc-800">Tier</th>
-              <th class="p-4 font-bold text-sm uppercase tracking-wider border-b border-zinc-200 dark:border-zinc-800">Point Type</th>
-              <th class="p-4 font-bold text-sm uppercase tracking-wider border-b border-zinc-200 dark:border-zinc-800">Examples</th>
-              <th class="p-4 font-bold text-sm uppercase tracking-wider border-b border-zinc-200 dark:border-zinc-800">Degrees</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-zinc-200 dark:divide-zinc-800 text-sm">
-            <tr class="hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-colors">
-              <td class="p-4 font-semibold text-rose-500">Primary</td>
-              <td class="p-4">Cardinal Points</td>
-              <td class="p-4">North, East, South, West</td>
-              <td class="p-4 font-mono">0°, 90°, 180°, 270°</td>
-            </tr>
-            <tr class="hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-colors">
-              <td class="p-4 font-semibold text-rose-500">Secondary</td>
-              <td class="p-4">Intercardinal Points</td>
-              <td class="p-4">NE, SE, SW, NW</td>
-              <td class="p-4 font-mono">45°, 135°, 225°, 315°</td>
-            </tr>
-            <tr class="hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-colors">
-              <td class="p-4 font-semibold text-rose-500">Tertiary</td>
-              <td class="p-4">Secondary Intercardinal</td>
-              <td class="p-4">NNE, ENE, ESE, SSE</td>
-              <td class="p-4 font-mono">22.5°, 67.5°, 112.5°, 157.5°</td>
-            </tr>
-            <tr class="hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-colors">
-              <td class="p-4 font-semibold text-rose-500">Quaternary</td>
-              <td class="p-4">The "By" Points</td>
-              <td class="p-4">North by East (NbE)</td>
-              <td class="p-4 font-mono">11.25°, 33.75°, 56.25°</td>
-            </tr>
-          </tbody>
-        </table>
+      <p>Hover over or tap the table rows below to see how the geometry builds upon itself on the compass dial.</p>
+
+      <!-- Interactive Grid: Table + SVG -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-zinc-100 dark:bg-zinc-900/50 p-6 rounded-2xl border border-zinc-200 dark:border-zinc-800 my-8">
+        
+        <!-- Left: Interactive Table -->
+        <div class="overflow-x-auto rounded-xl border border-zinc-300 dark:border-zinc-700 w-full shadow-sm">
+          <table class="w-full text-left border-collapse text-sm bg-white dark:bg-[#09090b]">
+            <thead>
+              <tr class="bg-zinc-200 dark:bg-zinc-800 text-zinc-900 dark:text-white">
+                <th class="p-3 font-bold uppercase tracking-wider border-b border-zinc-300 dark:border-zinc-700">Tier</th>
+                <th class="p-3 font-bold uppercase tracking-wider border-b border-zinc-300 dark:border-zinc-700">Degrees</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-zinc-200 dark:divide-zinc-800">
+              <tr class="interactive-row cursor-pointer transition-colors hover:bg-rose-50 dark:hover:bg-rose-500/10" data-target=".point-primary">
+                <td class="p-3 font-semibold text-rose-500">Primary (Cardinal)</td>
+                <td class="p-3 font-mono text-zinc-600 dark:text-zinc-400">0°, 90°, 180°, 270°</td>
+              </tr>
+              <tr class="interactive-row cursor-pointer transition-colors hover:bg-rose-50 dark:hover:bg-rose-500/10" data-target=".point-secondary">
+                <td class="p-3 font-semibold text-rose-500">Secondary (Intercardinal)</td>
+                <td class="p-3 font-mono text-zinc-600 dark:text-zinc-400">45°, 135°, 225°, 315°</td>
+              </tr>
+              <tr class="interactive-row cursor-pointer transition-colors hover:bg-rose-50 dark:hover:bg-rose-500/10" data-target=".point-tertiary">
+                <td class="p-3 font-semibold text-rose-500">Tertiary (Half-winds)</td>
+                <td class="p-3 font-mono text-zinc-600 dark:text-zinc-400">22.5°, 67.5°, 112.5°...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Right: Interactive SVG Compass -->
+        <div class="flex justify-center items-center w-full bg-[#121214] p-8 rounded-xl border border-zinc-800 shadow-inner">
+          <svg viewBox="0 0 400 400" class="w-64 h-64 select-none pointer-events-none drop-shadow-[0_0_15px_rgba(255,255,255,0.05)]">
+            <circle cx="200" cy="200" r="190" fill="none" stroke="#27272a" stroke-width="2" />
+            <circle cx="200" cy="200" r="150" fill="none" stroke="#27272a" stroke-width="1" stroke-dasharray="4,4" />
+            
+            <g transform="rotate(45 200 200)">
+              <!-- Tertiary Points -->
+              <polygon points="200,200 200,65 186,186" class="compass-point point-tertiary transition-colors duration-300" fill="#3f3f46" />
+              <polygon points="200,200 200,65 214,186" class="compass-point point-tertiary transition-colors duration-300" fill="#52525b" />
+              <polygon points="200,200 335,200 214,186" class="compass-point point-tertiary transition-colors duration-300" fill="#3f3f46" />
+              <polygon points="200,200 335,200 214,214" class="compass-point point-tertiary transition-colors duration-300" fill="#52525b" />
+              <polygon points="200,200 200,335 214,214" class="compass-point point-tertiary transition-colors duration-300" fill="#3f3f46" />
+              <polygon points="200,200 200,335 186,214" class="compass-point point-tertiary transition-colors duration-300" fill="#52525b" />
+              <polygon points="200,200 65,200 186,214" class="compass-point point-tertiary transition-colors duration-300" fill="#3f3f46" />
+              <polygon points="200,200 65,200 186,186" class="compass-point point-tertiary transition-colors duration-300" fill="#52525b" />
+              
+              <!-- Secondary Points -->
+              <polygon points="200,200 200,42 178,178" class="compass-point point-secondary transition-colors duration-300" fill="#71717a" />
+              <polygon points="200,200 200,42 222,178" class="compass-point point-secondary transition-colors duration-300" fill="#52525b" />
+              <polygon points="200,200 358,200 222,178" class="compass-point point-secondary transition-colors duration-300" fill="#71717a" />
+              <polygon points="200,200 358,200 222,222" class="compass-point point-secondary transition-colors duration-300" fill="#52525b" />
+              <polygon points="200,200 200,358 222,222" class="compass-point point-secondary transition-colors duration-300" fill="#71717a" />
+              <polygon points="200,200 200,358 178,222" class="compass-point point-secondary transition-colors duration-300" fill="#52525b" />
+              <polygon points="200,200 42,200 178,222" class="compass-point point-secondary transition-colors duration-300" fill="#71717a" />
+              <polygon points="200,200 42,200 178,178" class="compass-point point-secondary transition-colors duration-300" fill="#52525b" />
+            </g>
+
+            <!-- Primary Points (North, East, South, West) -->
+            <polygon points="200,200 200,20 174,174" class="compass-point point-primary transition-colors duration-300" fill="#d4d4d8" />
+            <polygon points="200,200 200,20 226,174" class="compass-point point-primary transition-colors duration-300" fill="#a1a1aa" />
+            <polygon points="200,200 380,200 226,174" class="compass-point point-primary transition-colors duration-300" fill="#d4d4d8" />
+            <polygon points="200,200 380,200 226,226" class="compass-point point-primary transition-colors duration-300" fill="#a1a1aa" />
+            <polygon points="200,200 200,380 226,226" class="compass-point point-primary transition-colors duration-300" fill="#d4d4d8" />
+            <polygon points="200,200 200,380 174,226" class="compass-point point-primary transition-colors duration-300" fill="#a1a1aa" />
+            <polygon points="200,200 20,200 174,226" class="compass-point point-primary transition-colors duration-300" fill="#d4d4d8" />
+            <polygon points="200,200 20,200 174,174" class="compass-point point-primary transition-colors duration-300" fill="#a1a1aa" />
+
+            <circle cx="200" cy="200" r="14" fill="#18181b" stroke="#52525b" stroke-width="2" />
+          </svg>
+        </div>
       </div>
 
-      <div class="p-6 bg-zinc-100 dark:bg-zinc-800/50 rounded-xl border border-zinc-200 dark:border-zinc-700 text-sm italic">
-        <strong>Interactive Component Idea:</strong> Embed an SVG compass rose here. When a reader clicks or taps a row in the table above, the corresponding points on the SVG compass light up, helping them visualize the geometry.
+      <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white mt-16 mb-6">4. The Science: Working With the Magnetic Compass</h2>
+      
+      <!-- Side-by-side Layout for Text and Image -->
+      <div class="flex flex-col md:flex-row-reverse gap-8 items-start mb-8">
+        <div class="flex-1 space-y-6">
+          <p>Deep beneath the Earth's crust, churning liquid iron creates a massive geodynamo. This generates a magnetic field that envelops the globe. A traditional compass contains a lightweight, magnetized needle balanced on a nearly frictionless pivot. Because the Earth's magnetic North Pole emits an attractive force, the "North" end of the needle is constantly pulled into alignment with these invisible magnetic field lines.</p>
+          <p>However, working with a magnetic compass requires accounting for <strong>Magnetic Declination</strong>. The Earth's geographic North Pole (True North) and the magnetic North Pole are not in the exact same place. Depending on where you are standing on the planet, your compass might point several degrees away from True North. Navigators must mathematically adjust their compass rose readings to correct this error.</p>
+        </div>
+        
+        <!-- Tertiary Image (Science) -->
+        <div class="w-full md:w-1/3 shrink-0 bg-zinc-200 dark:bg-zinc-800 rounded-xl overflow-hidden shadow-lg border border-zinc-200 dark:border-zinc-800">
+          <img src="/blog-science.jpg" alt="Magnetic field lines crossing a smartphone" class="w-full h-auto object-cover aspect-[4/5]" onerror="this.src='https://images.unsplash.com/photo-1579309403816-c85ee581b212?auto=format&fit=crop&q=80&w=800'" />
+        </div>
       </div>
 
-      <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white mt-12 mb-4">4. The Science: Working With the Magnetic Compass</h2>
-      
-      <p>To trust a compass rose, you must understand the science powering the magnetic compass.</p>
-      
-      <p>Deep beneath the Earth's crust, churning liquid iron creates a massive geodynamo. This generates a magnetic field that envelops the globe. A traditional compass contains a lightweight, magnetized needle balanced on a nearly frictionless pivot. Because the Earth's magnetic North Pole emits an attractive force, the "North" end of the needle is constantly pulled into alignment with these invisible magnetic field lines.</p>
-      
-      <p>However, working with a magnetic compass requires accounting for <strong>Magnetic Declination</strong>.</p>
-      
-      <p>The Earth's geographic North Pole (True North—the top of the map) and the magnetic North Pole (where your needle actually points) are not in the exact same place. Depending on where you are standing on the planet, your compass might point several degrees away from True North. Navigators must mathematically adjust their compass rose readings to correct this error and avoid sailing hundreds of miles off course.</p>
-
-      <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white mt-12 mb-4">5. Culture and Symbolism</h2>
-      
-      <p>Beyond its use as a tool, the compass rose has deeply permeated human culture. Because it fundamentally represents guidance, discovering one's path, and returning home safely, it has become a powerful global motif.</p>
-      
-      <p>It is the emblem of the NATO alliance, representing a shared direction. It is embedded into the floor plans of massive public squares and airports to subconsciously orient crowds. In the tattoo world, it is one of the most requested designs by travelers, symbolizing a protective ward against getting lost in life.</p>
-
-      <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white mt-12 mb-4">6. Types of Compass Roses</h2>
-      
-      <p>Throughout history, the design has adapted to its medium:</p>
-      <ul class="list-disc pl-6 space-y-2 marker:text-rose-500">
-        <li><strong>Cartographic Roses:</strong> Flat, highly decorative, drawn on paper or parchment, used for aligning maps to reality.</li>
-        <li><strong>Nautical Dials:</strong> Physical disks where the entire compass rose rotates beneath a stationary line (the lubber line), housed inside ships' binnacles.</li>
-        <li><strong>Aviation Roses:</strong> Simplified, high-contrast digital displays on aircraft dashboards, optimized for split-second readability at high speeds.</li>
-      </ul>
-
-      <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white mt-12 mb-4">7. Modern Usage: The Compass Rose in the Digital Age</h2>
+      <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white mt-16 mb-6">5. Modern Usage: The Compass Rose in the Digital Age</h2>
       
       <p>Today, you don't need a heavy brass instrument to find your way. The modern usage of the compass rose lives inside web browsers and smartphone hardware.</p>
       
       <p>Modern mobile devices are equipped with micro-electromechanical systems (MEMS)—specifically, a magnetometer to read the Earth's magnetic field, and an accelerometer to understand how the phone is tilted. When combined through software, these sensors generate a highly accurate, digital compass rose on your screen.</p>
       
-      <p>Instead of doing manual math to calculate magnetic declination, modern applications use your GPS coordinates to automatically calculate True North in real-time.</p>
-      
-      <p>If you want to see this centuries-old geometry powered by cutting-edge web technology, you can use our free <a href="/" target="_blank" rel="noopener noreferrer" class="font-bold text-rose-600 dark:text-rose-400 hover:underline hover:text-rose-500 transition-colors">Compass Rose & Digital Spirit Level</a>. It takes the classic 32-point design and pairs it with instant hardware sensor readouts, allowing you to find True North, track real-time degrees, and measure surface tilt—all directly from your browser without downloading an app.</p>
-      
-      <p>The medium has changed from parchment to pixels, but the compass rose remains exactly what it has always been: our ultimate guide through the unknown.</p>
+      <div class="my-10 p-8 bg-gradient-to-br from-rose-50 to-white dark:from-rose-500/10 dark:to-zinc-900/50 rounded-2xl border border-rose-200 dark:border-rose-900/30 shadow-lg text-center">
+        <h3 class="text-2xl font-black text-zinc-900 dark:text-white mb-4">Ready to test your device's sensors?</h3>
+        <p class="mb-6 text-zinc-700 dark:text-zinc-300">Experience this centuries-old geometry powered by cutting-edge web technology. Find True North, track real-time degrees, and measure surface tilt—all directly from your browser.</p>
+        <a href="/" class="inline-block px-8 py-3 bg-rose-500 hover:bg-rose-600 text-white font-bold rounded-full transition-colors shadow-md">
+          Launch Digital Compass Tool
+        </a>
+      </div>
 
+      <p class="text-center font-medium italic text-zinc-600 dark:text-zinc-400">The medium has changed from parchment to pixels, but the compass rose remains exactly what it has always been: our ultimate guide through the unknown.</p>
     </div>
   </article>
 
@@ -200,6 +225,7 @@ import '../../styles/global.css';
   </footer>
 
   <script>
+    // Theme Toggle Logic
     const themeToggleBtn = document.getElementById('theme-toggle');
     const darkIcon = document.getElementById('theme-toggle-dark-icon');
     const lightIcon = document.getElementById('theme-toggle-light-icon');
@@ -221,6 +247,45 @@ import '../../styles/global.css';
         darkIcon?.classList.remove('hidden');
         lightIcon?.classList.add('hidden');
       }
+    });
+
+    // Interactive SVG Compass Logic
+    const rows = document.querySelectorAll('.interactive-row');
+    const allPoints = document.querySelectorAll('.compass-point');
+
+    rows.forEach(row => {
+      // Mouse Enter / Touch Start
+      const triggerHighlight = () => {
+        const targetClass = row.getAttribute('data-target');
+        
+        // Dim all points
+        allPoints.forEach(p => {
+          // Store original fill colors as data attributes if not already done
+          if (!p.hasAttribute('data-original-fill')) {
+            p.setAttribute('data-original-fill', p.getAttribute('fill'));
+          }
+          p.setAttribute('fill', '#27272a'); // Dimmed dark gray
+        });
+
+        // Highlight targeted tier with Rose Red
+        document.querySelectorAll(targetClass).forEach(p => {
+          p.setAttribute('fill', '#f43f5e'); // Tailwind rose-500
+        });
+      };
+
+      // Mouse Leave / Touch End
+      const resetHighlight = () => {
+        allPoints.forEach(p => {
+          // Restore original colors
+          const original = p.getAttribute('data-original-fill');
+          if (original) p.setAttribute('fill', original);
+        });
+      };
+
+      row.addEventListener('mouseenter', triggerHighlight);
+      row.addEventListener('mouseleave', resetHighlight);
+      row.addEventListener('touchstart', (e) => { e.preventDefault(); triggerHighlight(); });
+      row.addEventListener('touchend', resetHighlight);
     });
   </script>
 </body>
