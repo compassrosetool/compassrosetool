@@ -31,18 +31,32 @@ import '../styles/global.css';
 </head>
 <body class="bg-zinc-50 dark:bg-[#09090b] text-zinc-900 dark:text-zinc-300 font-sans flex flex-col min-h-screen transition-colors duration-200">
   
-  <header class="w-full border-b border-zinc-200 dark:border-zinc-800/80 bg-white/80 dark:bg-[#09090b]/80 backdrop-blur-xl sticky top-0 z-50">
-    <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="/" class="flex items-center gap-3 cursor-pointer" aria-label="Go to homepage">
-        <img src="/favicon-96x96.png" alt="Compass Rose Logo" class="w-9 h-9 object-contain drop-shadow-sm" aria-hidden="true" />
-        <div class="text-xl font-extrabold tracking-tight text-zinc-900 dark:text-white m-0">Compass Rose</div>
-      </a>
-      <button id="theme-toggle" class="p-2.5 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors border border-zinc-200 dark:border-zinc-700/50">
-        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+<!-- Navigation Header -->
+<header class="w-full border-b border-zinc-200 dark:border-zinc-800/80 bg-white/80 dark:bg-[#09090b]/80 backdrop-blur-xl sticky top-0 z-50 transition-colors duration-200">
+  <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-3 cursor-pointer" aria-label="Home">
+      <img src="/favicon-96x96.png" alt="Compass Rose Logo" class="w-9 h-9 object-contain drop-shadow-sm" aria-hidden="true" />
+      <div class="text-xl font-extrabold tracking-tight text-zinc-900 dark:text-white m-0">Compass Rose</div>
+    </a>
+    <div class="flex items-center gap-4 sm:gap-6">
+      <nav class="text-sm font-semibold text-zinc-500 dark:text-zinc-400 flex items-center gap-4">
+        <a href="/#about" class="hidden sm:inline hover:text-zinc-900 dark:hover:text-white transition-colors">About Tool</a>
+        <a href="/#faq" class="hidden sm:inline hover:text-zinc-900 dark:hover:text-white transition-colors">FAQ</a>
+        <a href="/blog" class="text-zinc-900 dark:text-white sm:text-zinc-500 sm:dark:text-zinc-400 hover:text-rose-500 transition-colors">Blog</a>
+      </nav>
+      
+      <!-- Theme Toggle Button -->
+      <button id="theme-toggle" class="p-2.5 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors border border-zinc-200 dark:border-zinc-700/50 focus:outline-none" aria-label="Toggle Dark Mode">
+        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+        </svg>
+        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+        </svg>
       </button>
     </div>
-  </header>
+  </div>
+</header>
 
   <main class="flex-grow max-w-3xl w-full mx-auto px-4 py-12 text-center">
     <div class="w-16 h-16 bg-rose-500/10 rounded-full flex items-center justify-center mx-auto mb-6">
